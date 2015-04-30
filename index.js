@@ -1,1 +1,1 @@
-exports.ScopeChain = require('./analysis/ScopeChain').ScopeChain;
+module.exports = require('./out'); 

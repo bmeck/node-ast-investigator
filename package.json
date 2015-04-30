@@ -4,7 +4,10 @@
   "description": "utility for callback hell",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run prepublish",
+    "prepublish": "cp -r lib/ out/; babel lib --out-dir out --source-maps --ignore 'test/fixtures' --blacklist strict",
+    "pretest": "npm run prepublish",
+    "test": "node out/test"
   },
   "author": "bradleymeck",
   "repository": {
@@ -14,6 +17,6 @@
   "license": "MIT",
   "dependencies": {
     "ast-traverse": "~0.1.1",
-    "recast": "~0.6.4"
+    "recast": "^0.10.12"
   }
 }
