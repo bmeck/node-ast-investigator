@@ -177,7 +177,7 @@ ScopeChain.prototype.toJSON = function () {
     'node',
     'children',
     'vars',
-    'assignaments',
+    'assignments',
     'init',
     'refs',
     'calls',
