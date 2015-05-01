@@ -1,0 +1,4 @@
+function test_throw_fn_cleanup() {
+  var limited_cleanup = 123;
+  throw 456;
+}

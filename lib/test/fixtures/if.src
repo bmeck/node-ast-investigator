@@ -1,0 +1,8 @@
+if (test) {
+  function in_if() {}
+  var in_if = function in_if() {}
+}
+else {
+  function in_if() {}
+}
+var in_if; // lies

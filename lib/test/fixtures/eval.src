@@ -1,0 +1,17 @@
+function parent_of_eval() {
+  function ruined_by_eval() {
+    eval()
+  }
+  function not_eval_dependant_on_parent() {
+    parent_of_eval.eval()
+  }
+  function not_eval_obj() {
+    ({}).eval()
+  }
+  function not_eval_inner() {
+    not_eval_inner.eval()
+  }
+  function shadowed_eval(eval) {
+    eval();
+  }
+}

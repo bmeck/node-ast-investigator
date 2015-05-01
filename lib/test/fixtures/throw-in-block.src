@@ -1,0 +1,4 @@
+if (test_throw_block_cleanup) {
+  let cascading_cleanup = 123;
+  throw 456;
+}

@@ -1,0 +1,30 @@
+function grand_parent(err, grand_parent_argument) {
+  function parent_independant() {
+    return 2;
+  }
+  (function parent_expression() {})
+  function parent_shadowing(err) {}
+  function parent_sibling_dependant() {
+    parent_dependant;
+  }
+  function parent_dependant_on_argument() {
+    grand_parent_argument;
+  }
+  function parent_dependant_in_if() {
+    if (function () {grand_parent_argument}) {}
+  }
+  function parent_dependant_in_for() {
+    for (var x in function () {grand_parent_argument}) {}
+  }
+  function parent_shadowed_in_for() {
+    for (var grand_parent_argument in function () {grand_parent_argument}) {}
+  }
+  function parent() {
+    function child(args) {
+    }
+    child();
+  }
+}
+
+
+

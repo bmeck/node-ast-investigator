@@ -1,0 +1,2 @@
+({*concise_generator() {}})
+function* generator() {}

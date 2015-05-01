@@ -1,0 +1,7 @@
+for (let x=0;x>1;x++);
+if (true) {
+  const block_scope = true;
+  function dependant_on_block_scope() {
+    block_scope;
+  }
+}

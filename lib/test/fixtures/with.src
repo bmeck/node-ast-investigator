@@ -1,0 +1,8 @@
+with ({}) { 
+  function ruined_by_with() {
+    outer();
+  }
+  function shadowing_with_dependency(outer) {
+    outer();
+  }
+}

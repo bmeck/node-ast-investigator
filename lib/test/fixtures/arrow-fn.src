@@ -1,0 +1,2 @@
+short_body = () => 0
+block_body = () => {}
